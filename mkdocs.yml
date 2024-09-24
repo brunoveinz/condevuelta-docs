@@ -1,0 +1,34 @@
+site_name: Condevuelta Docs
+
+
+
+nav:
+  - Home: index.md
+  - Para Servir: 
+      - Explicacion: modulos/servir/servirDocs.md
+      - Modelo: modulos/servir/servirModel.md
+      - API : modulos/servir/servirApi.md
+
+
+
+
+theme:
+  name: material
+  favicon: 'img/favicon.ico'  # Ruta a tu favicon personalizado
+  palette:
+    scheme: default  # Cambia a light o dark según prefieras
+    primary: pink  # Color principal del nav
+    accent: pink     # Color de acento
+
+
+# Extensiones Markdown
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# JavaScript adicional para Mermaid
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
